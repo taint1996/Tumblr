@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   end
   root 'posts#index'
 
-  get 'posts/new'
-  get "pages/about"
+  get '/about', to: 'pages#about'
 end
